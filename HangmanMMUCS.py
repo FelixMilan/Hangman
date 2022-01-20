@@ -168,7 +168,7 @@ while lives > 0:
       t.forward(40)
       t.back(40)
     if lives == 1:
-      #draw legss
+      #draw legs
       t.right(45)
       t.penup()
       t.forward(45)
