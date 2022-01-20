@@ -123,9 +123,6 @@ while lives > 0:
   else:
     print ("Guess Incorrect. You lose a life")
     lives = lives - 1
-    #if lives == 10:
-    #  t.forward(100)
-    #  t.right(90)
     if lives == 9:
       t.forward(200)
       t.right(90)
