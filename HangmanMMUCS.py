@@ -115,15 +115,21 @@ while lives > 0:
     guess = input("Guess a letter: ")
     guess = guess.lower()
     usedLetters.extend(guess)
+  #if the guess equals the word or the display has been populated with correct letters...
   if guess == randomWord or display == wordLetters:
+    #the word is correct
     wordCorrect = True
-    break
+  #elsse if the guess is in the array of the word's letters...
   elif guess in wordLetters:
-    display = updateDisplay(randomWord, display, guess) 
+    #update the display using the function created earlier
+    display = updateDisplay(randomWord, display, guess)
+    #else print that a life is lost, remove a life and update the hangman drawwing using turtle
   else:
     print ("Guess Incorrect. You lose a life")
     lives = lives - 1
+    #each life draws an extra part of the drawing, each life corresponds to a line
     if lives == 9:
+      #start drawing gallows
       t.forward(200)
       t.right(90)
     if lives == 8:
@@ -141,15 +147,18 @@ while lives > 0:
       t.right(90)
       t.forward(25)
     if lives == 5:
+      #draw head
       t.right(90)
       t.circle(20)
     if lives == 4:
+      #draw body
       t.left(90)
       t.penup()
       t.forward(40)
       t.pendown()
       t.forward(50)
     if lives == 3:
+      #draw arms
       t.back(45)
       t.right(45)
       t.forward(40)
@@ -159,6 +168,7 @@ while lives > 0:
       t.forward(40)
       t.back(40)
     if lives == 1:
+      #draw legss
       t.right(45)
       t.penup()
       t.forward(45)
@@ -170,10 +180,12 @@ while lives > 0:
       t.left(60)
       t.forward(50)
       t.back(50)   
-    #print(" ".join(display))
 
+#if the word is correct after the lives have run out then print congratulations
 if wordCorrect == True:
   print ("You win, congratulations! The word was", (randomWord))
+#if the word is wrong after the lives have run out then print commiserations
 if wordCorrect == False:
   print ("You lost, commiserations! The word was", (randomWord))
+#make the turtle screen only close on click instead of at the end of the lives
 s.exitonclick()
