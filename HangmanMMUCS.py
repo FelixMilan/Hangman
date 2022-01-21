@@ -119,6 +119,7 @@ while lives > 0:
   if guess == randomWord or display == wordLetters:
     #the word is correct
     wordCorrect = True
+    break
   #elsse if the guess is in the array of the word's letters...
   elif guess in wordLetters:
     #update the display using the function created earlier
