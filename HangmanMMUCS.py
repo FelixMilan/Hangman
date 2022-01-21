@@ -73,15 +73,15 @@ if difficulty == 3:
 wordCorrect = False
 
 #update display fuction, this shows us when we have letters correct
-def updateDisplay(randomWord, display, letterGuessed):
+def updateDisplay(randomWord, display, guess):
   #create indexer which starts at beggining of array
   index = 0
   #while indexer hasn't reached the end of the word...
   while index < len(randomWord):
     #if the letter of the random word at the index matches the inputted letter...
-    if randomWord[index] == letterGuessed:
+    if randomWord[index] == guess:
       #make the _ at the index now display the correct guessed letter
-      display[index] = letterGuessed
+      display[index] = guess
     #move the indexer along
     index = index + 1
   #return new display
