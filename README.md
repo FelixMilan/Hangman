@@ -12,3 +12,60 @@ wordList = ["abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward"
 "subway","swivel","syndrome","thriftless","thumbscrew","topaz","transcript","transgress","transplant","triphthong","twelfth","twelfths","unknown","unworthy","unzip","uptown","vaporize","vixen",
 "vodka","voodoo","vortex","voyeurism","walkway","waltz","wave","wavy","waxy","wellspring","wheezy","whiskey","whizzing","whomever","wimpy","witchcraft","wizard","woozy","wristwatch","wyvern",
 "xylophone","yachtsman","yippee","yoked","youthful","yummy","zephyr","zigzag", "zigzagging", "zilch", "zipper", "zodiac", "zombie"]
+
+TURTLE COMMANDS:
+t = turtle.Turtle()
+s = turtle.getscreen()
+t.hideturtle()
+#make the gallows
+t.setheading(180)
+t.forward(100)
+t.right(90)
+t.forward(200)
+
+t.right(90)
+t.forward(100)
+
+t.back(75)
+t.right(135)
+t.forward(35.4)
+t.penup()
+t.back(35.4)
+t.left(135)
+t.forward(75)
+t.pendown()
+
+t.right(90)
+t.forward(25)
+#head
+t.right(90)
+t.circle(20)
+#body
+t.left(90)
+t.penup()
+t.forward(40)
+t.pendown()
+t.forward(50)
+#arms
+t.back(45)
+t.right(45)
+t.forward(40)
+t.back(40)
+
+t.left(90)
+t.forward(40)
+t.back(40)
+#legs
+t.right(45)
+t.penup()
+t.forward(45)
+t.pendown()
+t.right(30)
+t.forward(50)
+t.back(50)
+
+t.left(60)
+t.forward(50)
+t.back(50)
+
+s.exitonclick()
