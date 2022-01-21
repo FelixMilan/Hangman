@@ -1,5 +1,7 @@
 # Hangman game in python using turtle graphics.
 
+
+```py
 WORDBANK:
 wordList = ["abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward", "axiom", "azure", "bagpipes", "bandwagon","banjo","bayou","beekeeper","bikini","blitz","boggle","bookworm","boxcar",
 "buckaroo","buffalo","buffoon","buxom","buzzing","buzzwords","caliph","cobweb","cockiness","croquet","crypt","curacao","daiquiri","dirndl","disavow","dizzying","duplex","dwarves","embezzle",
@@ -12,9 +14,9 @@ wordList = ["abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward"
 "subway","swivel","syndrome","thriftless","thumbscrew","topaz","transcript","transgress","transplant","triphthong","twelfth","twelfths","unknown","unworthy","unzip","uptown","vaporize","vixen",
 "vodka","voodoo","vortex","voyeurism","walkway","waltz","wave","wavy","waxy","wellspring","wheezy","whiskey","whizzing","whomever","wimpy","witchcraft","wizard","woozy","wristwatch","wyvern",
 "xylophone","yachtsman","yippee","yoked","youthful","yummy","zephyr","zigzag", "zigzagging", "zilch", "zipper", "zodiac", "zombie"]
-
+```
 ---
-
+```py
 TURTLE COMMANDS:
 t = turtle.Turtle()
 s = turtle.getscreen()
@@ -71,3 +73,4 @@ t.forward(50)
 t.back(50)
 
 s.exitonclick()
+```
