@@ -20,7 +20,7 @@ wordList = ["abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward"
 randomWord = random.choice(wordList)
 #make all words lower when chosen (all mine are lower already but this will help in the case yours aren't)
 randomWord = randomWord.lower()
-#create an array for all the letters in  your random word
+#create a list for all the letters in  your random word
 wordLetters = []
 for character in randomWord:
   wordLetters.append(character)
