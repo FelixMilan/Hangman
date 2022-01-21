@@ -18,18 +18,21 @@ wordList = ["abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward"
 ---
 ```py
 TURTLE COMMANDS:
+import turtle
 t = turtle.Turtle()
 s = turtle.getscreen()
 t.hideturtle()
 #make the gallows
+#10
 t.setheading(180)
 t.forward(100)
+#9
 t.right(90)
 t.forward(200)
-
+#8
 t.right(90)
 t.forward(100)
-
+#7
 t.back(75)
 t.right(135)
 t.forward(35.4)
@@ -38,28 +41,32 @@ t.back(35.4)
 t.left(135)
 t.forward(75)
 t.pendown()
-
+#6
 t.right(90)
 t.forward(25)
 #head
+#5
 t.right(90)
 t.circle(20)
 #body
+#4
 t.left(90)
 t.penup()
 t.forward(40)
 t.pendown()
 t.forward(50)
 #arms
+#3
 t.back(45)
 t.right(45)
 t.forward(40)
 t.back(40)
-
+#2
 t.left(90)
 t.forward(40)
 t.back(40)
 #legs
+#1
 t.right(45)
 t.penup()
 t.forward(45)
@@ -67,7 +74,7 @@ t.pendown()
 t.right(30)
 t.forward(50)
 t.back(50)
-
+#0
 t.left(60)
 t.forward(50)
 t.back(50)
