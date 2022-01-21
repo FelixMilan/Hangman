@@ -114,9 +114,10 @@ while lives > 0:
     #each life draws an extra part of the drawing, each life corresponds to a line
     if lives == 9:
       #start drawing gallows
-      t.forward(200)
       t.right(90)
+      t.forward(200)
     if lives == 8:
+      t.right(90)
       t.forward(100)
     if lives == 7:
       t.back(75)
