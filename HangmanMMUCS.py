@@ -101,7 +101,7 @@ while lives > 0:
     usedLetters.extend(guess)
   #if the guess equals the word or the display has been populated with correct letters...
   if guess == randomWord or display == wordLetters:
-    #the word is correct
+    #the word is correct and we finish the program
     wordCorrect = True
     break
   #elsse if the guess is in the array of the word's letters...
