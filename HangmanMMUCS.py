@@ -69,9 +69,6 @@ if difficulty == 3:
   t.right(90)
   t.forward(25)
 
-#start with word being incorrect
-wordCorrect = False
-
 #update display fuction, this shows us when we have letters correct
 def updateDisplay(randomWord, display, guess):
   #create indexer which starts at beggining of array
@@ -87,6 +84,8 @@ def updateDisplay(randomWord, display, guess):
   #return new display
   return display
 
+#start with word being incorrect
+wordCorrect = False
 #while you haven't run out of lives
 while lives > 0: 
   #print the display, lives and used letters
