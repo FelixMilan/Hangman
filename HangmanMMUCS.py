@@ -107,7 +107,7 @@ while lives > 0:
   elif guess in wordLetters:
     #update the display using the function created earlier
     display = updateDisplay(randomWord, display, guess)
-    #else print that a life is lost, remove a life and update the hangman drawwing using turtle
+  #else print that a life is lost, remove a life and update the hangman drawwing using turtle
   else:
     print ("Guess Incorrect. You lose a life")
     lives = lives - 1
