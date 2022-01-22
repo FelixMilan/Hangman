@@ -38,7 +38,6 @@ if difficulty == 1:
   t.hideturtle()
   t.setheading(180)
   t.forward(100)
-  t.right(90)
 if difficulty == 2:
   lives = 8
   t.hideturtle()
