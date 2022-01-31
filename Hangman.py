@@ -22,7 +22,7 @@ guessedLetters =[]
 playerWin = False
 
 
-#make the guessedLetters have the right ammount of missing spaces and the selectedLetters have the right Lettersecters
+#make the guessedLetters have the right amount of missing spaces and the selectedLetters have the right Lettersecters
 for Lettersacter in selectedWord:
     selectedLetters.append(Lettersacter)
     guessedLetters += "_"
@@ -48,7 +48,7 @@ if difficulty is 2:
 if difficulty is 3:
     lives = 6
 
-#update guessedLetters fuction, this shows us when we have letters correct
+#updateGuessedLetters fuction, this shows us when we have letters correct
 def updateGuessedLetters(selectedWord, guessedLetters, guess):
   for index in range(0,len(selectedWord)):
     if selectedWord[index] is guess:
