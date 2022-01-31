@@ -28,7 +28,6 @@ for Lettersacter in selectedWord:
     guessedLetters += "_"
 
 #create difficulties, these change the amount of lives you get and therefore how much of the hangman is already drawn
-
 while True:
     try:
         difficulty = input ("Select the difficulty: 1 (easy), 2 (medium) or 3 (hard): ")
