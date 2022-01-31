@@ -1,4 +1,8 @@
 import random
+import turtle
+
+t = turtle.Turtle()
+s = turtle.getscreen()
 
 #list of words that are randomly chosen from
 wordList = ["abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward", "axiom", "azure", "bagpipes", "bandwagon","banjo","bayou","beekeeper","bikini","blitz","boggle","bookworm","boxcar",
@@ -92,6 +96,59 @@ while lives > 0 or playerWin:
     else:
         print ("Guess Incorrect. You lose a life")
         lives -= 1
+        if lives == 9:
+        #start drawing gallows
+            t.right(90)
+            t.forward(200)
+        if lives == 8:
+            t.right(90)
+            t.forward(100)
+        if lives == 7:
+            t.back(75)
+            t.right(135)
+            t.forward(35.4)
+            t.penup()
+            t.back(35.4)
+            t.left(135)
+            t.forward(75)
+            t.pendown()
+        if lives == 6:
+            t.right(90)
+            t.forward(25)
+        if lives == 5:
+        #draw head
+            t.right(90)
+            t.circle(20)
+        if lives == 4:
+        #draw body
+            t.left(90)
+            t.penup()
+            t.forward(40)
+            t.pendown()
+            t.forward(50)
+        if lives == 3:
+        #draw arms
+            t.back(45)
+            t.right(45)
+            t.forward(40)
+            t.back(40)
+        if lives == 2:
+            t.left(90)
+            t.forward(40)
+            t.back(40)
+        if lives == 1:
+        #draw legs
+            t.right(45)
+            t.penup()
+            t.forward(45)
+            t.pendown()
+            t.right(30)
+            t.forward(50)
+            t.back(50)
+        if lives == 0:
+            t.left(60)
+            t.forward(50)
+            t.back(50)
 
 #win/lose screens
 if playerWin is True:
