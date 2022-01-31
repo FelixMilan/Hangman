@@ -44,12 +44,41 @@ while True:
     except ValueError:
         print ("Not a valid difficulty, please try again")
         
-if difficulty is 1:
-    lives = 10
-if difficulty is 2:
-    lives = 8
-if difficulty is 3:
-    lives = 6
+if difficulty == 1:
+  #if easiest difficulty, least amount is already drawn and lives = 10
+  lives = 10
+  t.hideturtle()
+  t.setheading(180)
+  t.forward(100)
+if difficulty == 2:
+  lives = 8
+  t.hideturtle()
+  t.setheading(180)
+  t.forward(100)
+  t.right(90)
+  t.forward(200)
+  t.right(90)
+  t.forward(100)
+if difficulty == 3:
+  #if hardest difficulty, most is already drawn and lives = 6
+  lives = 6
+  t.hideturtle()
+  t.setheading(180)
+  t.forward(100)
+  t.right(90)
+  t.forward(200)
+  t.right(90)
+  t.forward(100)
+  t.back(75)
+  t.right(135)
+  t.forward(35.4)
+  t.penup()
+  t.back(35.4)
+  t.left(135)
+  t.forward(75)
+  t.pendown()
+  t.right(90)
+  t.forward(25)
 
 #updateGuessedLetters fuction, this shows us when we have letters correct
 def updateGuessedLetters(selectedWord, guessedLetters, guess):
