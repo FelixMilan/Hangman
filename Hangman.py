@@ -111,9 +111,10 @@ while lives > 0 or playerWin:
     #input and verify guess
     guess = input("Guess a letter: ")   
     guess = getValidGuess(guess)
+    guess = getValidGuess(guess)
 
     #add verified guess to used letters
-    usedLetters.extend(guess[0])
+    usedLetters.extend(guess)
     usedLetters.sort()
     
     if guessedLetters is selectedLetters:
