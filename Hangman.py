@@ -26,9 +26,9 @@ guessedLetters =[]
 playerWin = False
 
 
-#make the guessedLetters have the right amount of missing spaces and the selectedLetters have the right Lettersecters
-for Lettersacter in selectedWord:
-    selectedLetters.append(Lettersacter)
+#make the guessedLetters have the right amount of missing spaces and the selectedLetters have the right Letters
+for Letters in selectedWord:
+    selectedLetters.append(Letters)
     guessedLetters += "_"
 
 #create difficulties, these change the amount of lives you get and therefore how much of the hangman is already drawn
